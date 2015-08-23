@@ -14,7 +14,7 @@ public class GoToSceneOnKey : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Input.GetKeyDown(this.triggerKey))
+		if(Input.GetKeyUp(this.triggerKey))
 		{
 			Application.LoadLevel(this.nextScene);
 		}
