@@ -1,0 +1,1 @@
+Skybox is the default "purple-nebula-complex" skybox from Alex Peterson's program Spacescape
