@@ -103,7 +103,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 117638, guid: 237f1552c3ec84c3c8b6b3b5dfe8dced, type: 2}
   relativeSpawnPoint: {x: 0, y: 0, z: 1.29999995}
   isKeyControlled: 1
-  keyTrigger: 32
+  keyTrigger: 113
+  isMouseControlled: 0
+  mouseTrigger: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

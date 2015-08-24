@@ -7,6 +7,8 @@ public class FireGun : MonoBehaviour
 	[SerializeField] private Vector3 relativeSpawnPoint;
 	[SerializeField] private bool isKeyControlled;
 	[SerializeField] private KeyCode keyTrigger;
+	[SerializeField] private bool isMouseControlled;
+	[SerializeField] private MouseButtonType mouseTrigger;
 
 	private Transform theTransform;
 
@@ -26,15 +28,21 @@ public class FireGun : MonoBehaviour
 				this.Fire();
 			}
 		}
+
+		if(this.isMouseControlled)
+		{
+			if(Input.GetMouseButtonDown(MouseButtons.Get(this.mouseTrigger)))
+			{
+				this.Fire();
+			}
+		}
 	}
 
 	void OnDrawGizmos()
 	{
 		Gizmos.color = Color.red;
 
-		Vector3 absoluteSpawnPoint = this.GetAbsoluteSpawnPoint();
-
-		Gizmos.DrawWireSphere(this.transform.position + absoluteSpawnPoint, 0.1f);
+		Gizmos.DrawWireSphere(this.GetAbsoluteSpawnPoint(), 0.1f);
 	}
 
 	/// <summary>
@@ -49,7 +57,7 @@ public class FireGun : MonoBehaviour
 
 	private Vector3 GetAbsoluteSpawnPoint()
 	{
-		return Quaternion.Euler(this.transform.rotation.eulerAngles) * this.relativeSpawnPoint;
+		return this.transform.position + (Quaternion.Euler(this.transform.rotation.eulerAngles) * this.relativeSpawnPoint);
 	}
 
 

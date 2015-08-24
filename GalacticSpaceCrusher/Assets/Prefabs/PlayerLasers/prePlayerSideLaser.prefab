@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11418278}
   - 114: {fileID: 11450954}
   - 82: {fileID: 8283308}
+  - 136: {fileID: 13668188}
   m_Layer: 0
   m_Name: prePlayerSideLaser
   m_TagString: Untagged
@@ -71,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.28999996}
+  m_LocalPosition: {x: -5.15999985, y: -.58447361, z: 2.95124173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 481562}
@@ -132,14 +133,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ec371b7a12b464c9f9202bcf5e45e10b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .510999978
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 699.605164
+  MaxDistance: 699.605164
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -214,6 +215,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 2
+--- !u!136 &13668188
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 4
+  m_Direction: 0
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &19827748
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -1317,6 +1331,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: seconds
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Volume
+      value: .510999978
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
