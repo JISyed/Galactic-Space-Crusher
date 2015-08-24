@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11478934}
   - 114: {fileID: 11492340}
   - 82: {fileID: 8235572}
+  - 114: {fileID: 11480078}
   m_Layer: 0
   m_Name: prePlayerAutoTurretLaser
   m_TagString: Untagged
@@ -40,8 +41,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193384}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_Materials:
   - {fileID: 2100000, guid: 92a16b256f3b54b9a94efcb9e8b81cba, type: 2}
   m_SubsetIndices: 
@@ -145,6 +146,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7.5
+--- !u!114 &11480078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b547e04d3ad4521881e20f578f9f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decentionSpeed: 1
 --- !u!114 &11492340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -175,7 +188,19 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: decentionSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193384}

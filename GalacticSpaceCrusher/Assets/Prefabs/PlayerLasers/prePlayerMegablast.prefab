@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11432010}
   - 114: {fileID: 11445716}
   - 82: {fileID: 8252726}
+  - 114: {fileID: 11448302}
   m_Layer: 0
   m_Name: prePlayerMegablast
   m_TagString: Untagged
@@ -42,7 +43,7 @@ MeshRenderer:
   m_GameObject: {fileID: 133784}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_Materials:
   - {fileID: 2100000, guid: 9be950e2e79bf42d38993b4b84551e91, type: 2}
   m_SubsetIndices: 
@@ -145,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491263f110ba74a1997386b7f41d318c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 8
 --- !u!114 &11445716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -158,6 +159,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 5
+--- !u!114 &11448302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b547e04d3ad4521881e20f578f9f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decentionSpeed: 1
 --- !u!122 &12203498
 Halo:
   m_ObjectHideFlags: 1
@@ -191,6 +204,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Volume
       value: .660000026
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: decentionSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_ReceiveShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
