@@ -25,6 +25,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482972}
+  - 114: {fileID: 11463458}
   m_Layer: 0
   m_Name: prePlayerManualTurret
   m_TagString: Untagged
@@ -88,6 +89,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124514}
   m_Mesh: {fileID: 4300000, guid: 07ccc4a39fc964faabdd5536c82724f7, type: 3}
+--- !u!114 &11463458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d94714ad954e449cbf44be12bd0affc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 102150, guid: a63309b37e9354df084af8f850aa8de1, type: 2}
+  relativeSpawnPoint: {x: 0, y: .819999993, z: 2.25}
+  isKeyControlled: 0
+  keyTrigger: 0
+  isMouseControlled: 1
+  mouseTrigger: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
