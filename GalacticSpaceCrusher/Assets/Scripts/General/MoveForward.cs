@@ -7,6 +7,7 @@ public class MoveForward : MonoBehaviour
 
 	private Color arrowColor = new Color(0.0f, 0.5f, 1.0f);
 	private Transform theTransform;
+	private Vector3 newPosition;
 
 	// Use this for initialization
 	void Start () 
@@ -18,7 +19,7 @@ public class MoveForward : MonoBehaviour
 	void Update () 
 	{
 		// np = op + v * t
-		Vector3 newPosition = this.theTransform.position;
+		newPosition = this.theTransform.position;
 		newPosition += (this.theTransform.forward * this.speed) * Time.deltaTime;
 		this.theTransform.position = newPosition;
 	}

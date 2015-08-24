@@ -500,7 +500,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4288475647
+        rgba: 4279474175
       minMaxState: 0
     startSize:
       scalar: 3.9000001
@@ -589,7 +589,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 10.2399998
+      scalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1553,7 +1553,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4288475647
+        rgba: 4279474175
       minMaxState: 0
     startSize:
       scalar: 3.9000001
@@ -1642,7 +1642,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 48.3800011
+      scalar: 31.7199993
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2606,7 +2606,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4288475647
+        rgba: 4279474175
       minMaxState: 0
     startSize:
       scalar: 3.9000001
@@ -2695,7 +2695,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 10.2399998
+      scalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3659,7 +3659,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4288475647
+        rgba: 4279474175
       minMaxState: 0
     startSize:
       scalar: 3.9000001
@@ -3748,7 +3748,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 48.2999992
+      scalar: 31.1000004
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4743,11 +4743,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: EmissionModule.rate.scalar
-      value: 48.2999992
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: InitialModule.startColor.maxColor.rgba
+      value: 4279474175
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

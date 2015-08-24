@@ -7,6 +7,8 @@ public class FaceObjectAroundYAxis : MonoBehaviour
 
 	private Transform theTransform;
 	private Transform target;
+	private Vector3 lookPos;
+	private Quaternion finalRotation;
 
 	// Use this for initialization
 	void Start () 
@@ -22,9 +24,9 @@ public class FaceObjectAroundYAxis : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		var lookPos = target.position - this.theTransform.position;
+		lookPos = target.position - this.theTransform.position;
 		lookPos.y = 0;
-		var finalRotation = Quaternion.LookRotation(lookPos);
+		finalRotation = Quaternion.LookRotation(lookPos);
 		this.theTransform.rotation = finalRotation;
 	}
 }

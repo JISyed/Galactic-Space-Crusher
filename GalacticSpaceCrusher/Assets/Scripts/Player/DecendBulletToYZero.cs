@@ -5,6 +5,7 @@ public class DecendBulletToYZero : MonoBehaviour
 	[SerializeField] private float decentionSpeed;
 
 	private Transform theTransform;
+	private Vector3 newPosition;
 
 	// Use this for initialization
 	void Start () 
@@ -22,7 +23,7 @@ public class DecendBulletToYZero : MonoBehaviour
 		}
 		else
 		{
-			Vector3 newPosition = this.theTransform.position;
+			newPosition = this.theTransform.position;
 			newPosition += (Vector3.down * this.decentionSpeed) * Time.deltaTime;
 			this.theTransform.position = newPosition;
 		}
