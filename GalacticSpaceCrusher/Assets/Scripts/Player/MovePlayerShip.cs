@@ -6,6 +6,8 @@ public class MovePlayerShip : MonoBehaviour
 	public float rotationalForce;
 	public ParticleSystem leftBackThrusters;
 	public ParticleSystem rightBackThrusters;
+	public ParticleSystem leftSideThrusters;
+	public ParticleSystem rightSideThrusters;
 
 	new private Rigidbody rigidbody;
 	private Transform theTransform;
@@ -72,6 +74,26 @@ public class MovePlayerShip : MonoBehaviour
 		{
 			this.leftBackThrusters.Stop();
 			this.rightBackThrusters.Stop();
+		}
+
+		// ... if going clockwise
+		if(Input.GetKeyDown(KeyCode.D))
+		{
+			this.rightSideThrusters.Play();
+		}
+		if(Input.GetKeyUp(KeyCode.D))
+		{
+			this.rightSideThrusters.Stop();
+		}
+
+		// ... and if going CCW
+		if(Input.GetKeyDown(KeyCode.A))
+		{
+			this.leftSideThrusters.Play();
+		}
+		if(Input.GetKeyUp(KeyCode.A))
+		{
+			this.leftSideThrusters.Stop();
 		}
 	}
 }
