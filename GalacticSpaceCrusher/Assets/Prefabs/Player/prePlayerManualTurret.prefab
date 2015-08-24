@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7380ada798630484ebb9a166a959cb53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  targetTagName: Aimmer
 --- !u!114 &11463458
 MonoBehaviour:
   m_ObjectHideFlags: 1

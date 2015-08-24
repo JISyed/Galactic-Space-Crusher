@@ -31,7 +31,7 @@ GameObject:
   - 82: {fileID: 8226352}
   m_Layer: 0
   m_Name: prePlayerShip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4733,6 +4733,10 @@ Prefab:
       propertyPath: leftSideThrusters
       value: 
       objectReference: {fileID: 19867218}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138252}
