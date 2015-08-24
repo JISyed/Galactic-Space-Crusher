@@ -8,6 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468462}
+  - 114: {fileID: 11463834}
   m_Layer: 0
   m_Name: prePlayerSideCannon
   m_TagString: Untagged
@@ -88,6 +89,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182806}
   m_Mesh: {fileID: 4300000, guid: 02963ed3a75d543aca5a3f6dbf61d539, type: 3}
+--- !u!114 &11463834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d94714ad954e449cbf44be12bd0affc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 117638, guid: 237f1552c3ec84c3c8b6b3b5dfe8dced, type: 2}
+  relativeSpawnPoint: {x: 0, y: 0, z: 1.29999995}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
