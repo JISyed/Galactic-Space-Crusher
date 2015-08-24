@@ -5,6 +5,8 @@ public class FireGun : MonoBehaviour
 {
 	[SerializeField] private GameObject bulletPrefab;
 	[SerializeField] private Vector3 relativeSpawnPoint;
+	[SerializeField] private bool isKeyControlled;
+	[SerializeField] private KeyCode keyTrigger;
 
 	private Transform theTransform;
 
@@ -17,10 +19,12 @@ public class FireGun : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		// TEST
-		if(Input.GetKeyDown(KeyCode.Space))
+		if(this.isKeyControlled)
 		{
-			this.Fire();
+			if(Input.GetKeyDown(this.keyTrigger))
+			{
+				this.Fire();
+			}
 		}
 	}
 
