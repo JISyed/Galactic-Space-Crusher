@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6edac9e824341475381d08fbc5233c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireIntervalInSeconds: 2
+  fireIntervalInSeconds: 8
   startDelayInSeconds: 0
 --- !u!114 &11457978
 MonoBehaviour:
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6edac9e824341475381d08fbc5233c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireIntervalInSeconds: 2
+  fireIntervalInSeconds: 8
   startDelayInSeconds: 0
 --- !u!1001 &100100000
 Prefab:
@@ -227,7 +227,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: fireIntervalInSeconds
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 166252}
