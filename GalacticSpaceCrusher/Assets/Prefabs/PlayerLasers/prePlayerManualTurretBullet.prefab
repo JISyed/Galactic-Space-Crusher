@@ -15,7 +15,8 @@ GameObject:
   - 114: {fileID: 11447196}
   - 82: {fileID: 8222590}
   - 114: {fileID: 11459332}
-  m_Layer: 0
+  - 114: {fileID: 11420354}
+  m_Layer: 9
   m_Name: prePlayerManualTurretBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,6 +147,18 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &11420354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97c3df907bcc4ebf95970988d7cd04a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 5
 --- !u!114 &11422264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,6 +217,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_ReceiveShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: damageAmount
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

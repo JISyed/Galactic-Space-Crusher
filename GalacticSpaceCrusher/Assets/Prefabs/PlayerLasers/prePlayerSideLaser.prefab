@@ -12,7 +12,8 @@ GameObject:
   - 114: {fileID: 11450954}
   - 82: {fileID: 8283308}
   - 136: {fileID: 13668188}
-  m_Layer: 0
+  - 114: {fileID: 11443888}
+  m_Layer: 9
   m_Name: prePlayerSideLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ GameObject:
   - 4: {fileID: 408608}
   - 198: {fileID: 19827748}
   - 199: {fileID: 19931350}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SideLaserParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +47,7 @@ GameObject:
   - 4: {fileID: 481562}
   - 33: {fileID: 3307254}
   - 23: {fileID: 2328910}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LaserMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,6 +204,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+--- !u!114 &11443888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97c3df907bcc4ebf95970988d7cd04a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
 --- !u!114 &11450954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1343,6 +1356,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: damageAmount
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
