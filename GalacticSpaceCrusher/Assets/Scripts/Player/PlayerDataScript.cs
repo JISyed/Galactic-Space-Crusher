@@ -15,7 +15,10 @@ public class PlayerDataScript : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		if(this.health <= 0)
+		{
+			Application.LoadLevel("scene_GameOver");
+		}
 	}
 
 	void OnTriggerEnter(Collider other)

@@ -9,10 +9,4 @@ public class PlayerBulletScript : MonoBehaviour
 	{
 		
 	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		
-	}
 }
